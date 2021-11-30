@@ -87,7 +87,7 @@ export default function Sidebar() {
               </li>
 
               <li className="items-center">
-                <Link
+                  <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
                     (window.location.href.indexOf("/admin/m_pasien") !== -1
@@ -98,7 +98,7 @@ export default function Sidebar() {
                 >
                   <i
                     className={
-                      "fas fa-hospital-user " +
+                      "fas fa-hospital-user mr-2 text-sm " +
                       (window.location.href.indexOf("/admin/m_pasien") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
@@ -126,7 +126,7 @@ export default function Sidebar() {
                         : "text-blueGray-300")
                     }
                   ></i>{" "}
-                  master jadwal
+                   master jadwal
                 </Link>
               </li>
 
@@ -163,11 +163,28 @@ export default function Sidebar() {
 
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
               <li className="items-center">
-                <Link
+                {/* <Link
                   className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
                   to="/admin/jumlah_kunjungan"
+                > */}
+                  <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/admin/jumlah_kunjungan") !== -1
+                      ? "text-lightBlue-500 hover:text-lightBlue-600"
+                      : "text-blueGray-700 hover:text-blueGray-500")
+                  }
+                  to="/admin/jumlah_kunjungan"
                 >
-                  <i className="fas fa-file text-blueGray-400 mr-2 text-sm"></i>{" "}
+                  <i
+                    className={
+                      "fas fa-file mr-2 text-sm " +
+                      (window.location.href.indexOf("/admin/jumlah_kunjungan") !== -1
+                        ? "opacity-75"
+                        : "text-blueGray-300")
+                    }
+                  ></i>{" "}
+                  {/* <i className="fas fa-file text-blueGray-400 mr-2 text-sm"></i>{" "} */}
                   jumlah kunjungan
                 </Link>
               </li>
