@@ -17,7 +17,7 @@ export default function CardBarChart() {
         ],
         datasets: [
           {
-            label: new Date().getFullYear(),
+            label: "Pasien Baru",
             backgroundColor: "#ed64a6",
             borderColor: "#ed64a6",
             data: [30, 78, 56, 34, 100, 45, 13],
@@ -25,7 +25,7 @@ export default function CardBarChart() {
             barThickness: 8,
           },
           {
-            label: new Date().getFullYear() - 1,
+            label: "Pasien Lama",
             fill: false,
             backgroundColor: "#4c51bf",
             borderColor: "#4c51bf",
@@ -105,10 +105,10 @@ export default function CardBarChart() {
           <div className="flex flex-wrap items-center">
             <div className="relative w-full max-w-full flex-grow flex-1">
               <h6 className="uppercase text-blueGray-400 mb-1 text-xs font-semibold">
-                Performance
+                Berdasarkan
               </h6>
               <h2 className="text-blueGray-700 text-xl font-semibold">
-                Total orders
+                Jenis Pasien
               </h2>
             </div>
           </div>
